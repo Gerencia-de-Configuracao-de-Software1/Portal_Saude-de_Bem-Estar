@@ -1,0 +1,207 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Containers */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+.header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid #388E3C;
+}
+
+.header .logo {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #dcedc8;
+}
+
+/* Banner inicial */
+.hero {
+    background: url("https://img.freepik.com/free-photo/healthy-lifestyle-background_23-2148571471.jpg") no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 100px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    margin: 10px 0 0 20px;
+}
+
+/* Blog / Artigos */
+#blog article {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#blog article h3 {
+    color: #388E3C;
+}
+
+#blog a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#blog a:hover {
+    text-decoration: underline;
+}
+
+/* Contato */
+.contact {
+    background: #e8f5e9;
+    padding: 30px 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+    text-align: center;  /* Centraliza título e conteúdo */
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* Formulário */
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;  /* Mantém labels e inputs alinhados */
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+form button {
+    padding: 12px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #388E3C;
+}
+
+/* Rodapé */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    border-top: 4px solid #4CAF50;
+}
+
+.footer a {
+    color: #a5d6a7;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+}
